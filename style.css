@@ -1,0 +1,86 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8dc;
+    color: #333;
+}
+
+/* Header */
+header h1 {
+    background: linear-gradient(90deg, orange, tomato);
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+header h1:hover {
+    background: black;
+    color: orange;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Rainbow border animation */
+@keyframes rainbowBorder {
+    0% { border-color: red; }
+    20% { border-color: orange; }
+    40% { border-color: yellow; }
+    60% { border-color: green; }
+    80% { border-color: blue; }
+    100% { border-color: violet; }
+}
+
+/* Menu Item */
+.menu-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    border: 5px solid transparent;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+    animation: rainbowBorder 2s linear infinite;
+}
+
+/* Images */
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text */
+.item-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.price {
+    font-size: 1.2rem;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Footer */
+footer h2 {
+    text-align: center;
+    background: orange;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
